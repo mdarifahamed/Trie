@@ -14,7 +14,8 @@ public class Search {
     }
 
     public static Node root = new Node();
-
+    
+    //insert
     public static void insert(String word) {
         Node curr = root;
         for (int level = 0; level < word.length(); level++) {
@@ -28,7 +29,8 @@ public class Search {
         curr.eow = true;
 
     }
-
+    
+    // search
     public static boolean search(String key) {
         Node curr = root;
         for (int level = 0; level<key.length(); level++) {
