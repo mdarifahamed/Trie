@@ -1,5 +1,3 @@
-import java.lang.System.Logger.Level;
-
 public class UniqueCountSubstring {
     static class Node{
         Node[] children = new Node[26];
@@ -60,7 +58,7 @@ public class UniqueCountSubstring {
             if(root.children[i] != null) {
                 count+= countNodes(root.children[i]);
             }
-        }
+        }           
 
         return count+1;
     }
